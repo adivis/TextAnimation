@@ -15,67 +15,64 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    animation: coloranim 0.5s ease forwards 3.1s;
+    width:954px;
+    height:213px;
+    fill: #F3A7BA;
+    animation: size 0.5s ease forwards 3.1s;
 }
 
 #logo path:nth-child(1){
-    stroke-dasharray: 610;
-    stroke-dashoffset: 610;
+   
+    opacity: 0;
     animation: lineanim 2s ease forwards;
 }
 #logo path:nth-child(2){
-    stroke-dasharray: 297;
-    stroke-dashoffset: 297;
+    opacity: 0; 
     animation: lineanim 2s ease forwards 0.3s;
 }
 #logo path:nth-child(3){
-    stroke-dasharray: 490;
-    stroke-dashoffset: 490;
+    opacity: 0; 
     animation: lineanim 2s ease forwards 0.6s;
 }
 #logo path:nth-child(4){
-    stroke-dasharray: 508;
-    stroke-dashoffset: 508;
+    opacity: 0; 
     animation: lineanim 2s ease forwards 0.9s;
 }
 #logo path:nth-child(5){
-    stroke-dasharray: 512;
-    stroke-dashoffset: 512;
+    opacity: 0;
     animation: lineanim 2s ease forwards 1.2s;
 }
 #logo path:nth-child(6){
-    stroke-dasharray: 450;
-    stroke-dashoffset: 450;
+    opacity: 0;
     animation: lineanim 2s ease forwards 1.6s;
 }
 #logo path:nth-child(7){
-    stroke-dasharray: 227;
-    stroke-dashoffset: 227;
+    opacity: 0;
     animation: lineanim 2s ease forwards 1.8s;
 }
 #logo path:nth-child(8){
-    stroke-dasharray: 604;
-    stroke-dashoffset: 604;
+    opacity: 0;
     animation: lineanim 2s ease forwards 2.1s;
 }
 #logo path:nth-child(9){
-    stroke-dasharray: 512;
-    stroke-dashoffset: 512;
+    opacity: 0;
     animation: lineanim 2s ease forwards 2.4s;
 }
 
 @keyframes lineanim {
+    from{
+        opacity: 0;
+    }
     to{
-        stroke-dashoffset: 0;
+        opacity: 1;
     }
 }
 
 
-@keyframes coloranim {
-    from{
-        fill: transparent;
-    }
+@keyframes size {
+   
     to{
-        fill:#F3A7BA;
+        width: 734px;
+        height: 113px;
     }
 }

@@ -7,7 +7,7 @@
 body{
     width: 100%;
     height: 100vh;
-    background-color: #761D1D;
+    background-color: #000000;
 }
 
 #logo{
@@ -70,6 +70,6 @@ body{
         fill: transparent;
     }
     to{
-        fill:white;
+        fill:#F3A7BA;
     }
 }
